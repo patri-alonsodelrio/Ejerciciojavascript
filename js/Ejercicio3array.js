@@ -28,7 +28,7 @@ class Equipos {
 
 }
 
-let firstequipo = new Equipos('River Plate, 'Argentina')
+let firstequipo = new Equipos('River Plate', 'Argentina')
 
 campeonato1.agregarEquipo(firstequipo);
 campeonato2.agregarEquipo(firstequipo);
