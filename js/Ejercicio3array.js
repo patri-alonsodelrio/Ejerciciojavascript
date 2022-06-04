@@ -240,5 +240,154 @@ console.log(equipotercero);
 console.log(campeonato1.obtenerEquipo('River Plate'))
 
 
+// DOM
+
+
+// getElementbyClass para equipo 1 River en todos los campeonatos. 
+
+let celdaEquipo = document.getElementsByClassName("equipo1")
+
+
+console.log(celdaEquipo[0].innerHTML)
+
+for (equipo of celdaEquipo) {
+    console.log(equipo)
+    equipo.innerText = `${firstequipo.nombreEquipo}`;
+}
+
+// puntaje
+
+let ptsEquipo = document.getElementsByClassName("pts1")
+
+for (pts of ptsEquipo) {
+    pts.innerText = `${firstmatch.puntaje}`;
+}
+
+// goles favor river plate
+
+let gfEquipo = document.getElementsByClassName("gf1")
+
+for (gf of gfEquipo) {
+    gf.innerText = `${firstmatch.golesAFavor}`;
+}
+
+// Goles en contra
+
+let gcEquipo = document.getElementsByClassName("gc1")
+
+for (gc of gcEquipo) {
+    gc.innerText = `${firstmatch.golesContra}`;
+}
+
+//diferencia de goles 
+
+let difEquipo = document.getElementsByClassName("dif1")
+
+for (dif of difEquipo) {
+    dif.innerText = `${firstmatch.diferencia}`;
+}
+
+// Tabla equipo 2
+
+
+let celdaEquipo2 = document.getElementById('equipo2')
+let nuevoEquipo2 = document.createElement('div');
+nuevoEquipo2.innerHTML = `${equipoprimero.nombreEquipo}`;
+celdaEquipo2.append(nuevoEquipo2);
+
+// puntaje
+
+let ptsEquipo2 = document.getElementById("pts2")
+
+ptsEquipo2.innerText = `${partido1.puntaje}`;
+
+// goles favor
+
+let gfEquipo2 = document.getElementById("gf2")
+
+gfEquipo2.innerText = `${partido1.golesAFavor}`;
+
+
+// goles contra
+
+let gcEquipo2 = document.getElementById("gc2")
+
+gcEquipo2.innerText = `${partido1.golesContra}`;
+
+
+// diferencia
+
+let difEquipo2 = document.getElementById("dif2")
+
+difEquipo2.innerText = `${partido1.diferencia}`;
+
+// Tabla equipo 3
+
+let celdaEquipo3 = document.getElementById('equipo3')
+let nuevoEquipo3 = document.createElement('div');
+nuevoEquipo3.innerHTML = `${equiposegundo.nombreEquipo}`;
+celdaEquipo3.append(nuevoEquipo3);
+
+// puntaje
+
+let ptsEquipo3 = document.getElementById("pts3")
+
+ptsEquipo3.innerText = `${partido2.puntaje}`;
+
+// goles favor
+
+let gfEquipo3 = document.getElementById("gf3")
+
+gfEquipo3.innerText = `${partido2.golesAFavor}`;
+
+
+// goles contra
+
+let gcEquipo3 = document.getElementById("gc3")
+
+gcEquipo3.innerText = `${partido2.golesContra}`;
+
+
+// diferencia
+
+let difEquipo3 = document.getElementById("dif3")
+
+difEquipo3.innerText = `${partido2.diferencia}`;
+
+
+// Tabla equipo 4
+
+let celdaEquipo4 = document.getElementById('equipo4')
+let nuevoEquipo4 = document.createElement('div');
+nuevoEquipo4.innerHTML = `${equipotercero.nombreEquipo}`;
+celdaEquipo4.append(nuevoEquipo4);
+
+
+// puntaje
+
+let ptsEquipo4 = document.getElementById("pts4")
+
+ptsEquipo4.innerText = `${partido3.puntaje}`;
+
+// goles favor
+
+let gfEquipo4 = document.getElementById("gf4")
+
+gfEquipo4.innerText = `${partido3.golesAFavor}`;
+
+
+// goles contra
+
+let gcEquipo4 = document.getElementById("gc4")
+
+gcEquipo4.innerText = `${partido3.golesContra}`;
+
+
+// diferencia
+
+let difEquipo4 = document.getElementById("dif4")
+
+difEquipo4.innerText = `${partido3.diferencia}`;
+
 
 
