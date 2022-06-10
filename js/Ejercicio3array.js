@@ -390,7 +390,7 @@ difEquipo4.innerText = `${partido3.diferencia}`;
 
 for(let i = 0; i < celdaEquipo.length; i++) {
     celdaEquipo[i].addEventListener("click", function() {
-    alert(`El equipo "${firstequipo.nombreEquipo}" obtuvo ${firstmatch.puntaje}`);
+    alert(`El equipo "${firstequipo.nombreEquipo}" obtuvo ${firstmatch.puntaje} puntos`);
     })
 }
 
