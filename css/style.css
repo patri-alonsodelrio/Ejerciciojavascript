@@ -29,4 +29,11 @@ h1 {
 .tabla td,
 .tabla th {
     height: 2rem;
+}   
+
+.equipo1:hover,
+#equipo2:hover,
+#equipo3:hover,
+#equipo4:hover {
+    cursor: pointer;
 }

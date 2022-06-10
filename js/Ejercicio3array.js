@@ -25,7 +25,6 @@ let campeonato3 = new Campeonatos('CopaLibertadores', 'Internacional');
 class Equipos {
     constructor(nombreEquipo, nacionalidad) {
         this.nombreEquipo = nombreEquipo;
-        this.nacionalidad = nacionalidad;
         this.estadistica = [];
     }
 
@@ -47,18 +46,15 @@ campeonato3.agregarEquipo(firstequipo);
 // Construccion de equipos dinamicos ingresados por el usuario y pusheados mediante funcion al array Equipos dentro del Objeto Campeonato
 
 let equipo1 = prompt('ingrese el equipo a agregar al Campeonato argentino');
-let nacionalidad1 = prompt('ingrese la nacionalidad de su equipo');
-let equipoprimero = new Equipos(equipo1,nacionalidad1);
+let equipoprimero = new Equipos(equipo1);
 campeonato1.agregarEquipo(equipoprimero);
 
 let equipo2 = prompt('ingrese el equipo a agregar a la Copa argentina');
-let nacionalidad2 = prompt ('ingrese la nacionalidad de su equipo');
-let equiposegundo = new Equipos(equipo2,nacionalidad2);
+let equiposegundo = new Equipos(equipo2);
 campeonato2.agregarEquipo(equiposegundo);
 
 let equipo3 = prompt('ingrese el equipo a agregar a la Copa Libertadores');
-let nacionalidad3 = prompt ('ingrese la nacionalidad de su equipo');
-let equipotercero = new Equipos(equipo3,nacionalidad3);
+let equipotercero = new Equipos(equipo3);
 campeonato3.agregarEquipo(equipotercero);
 
 // Creacion de objeto estadisticas
@@ -388,6 +384,23 @@ gcEquipo4.innerText = `${partido3.golesContra}`;
 let difEquipo4 = document.getElementById("dif4")
 
 difEquipo4.innerText = `${partido3.diferencia}`;
+
+// Eventos
+
+
+for(let i = 0; i < celdaEquipo.length; i++) {
+    celdaEquipo[i].addEventListener("click", function() {
+    alert(`El equipo "${firstequipo.nombreEquipo}" obtuvo ${firstmatch.puntaje}`);
+    })
+}
+
+
+celdaEquipo2.addEventListener('click',()=>{alert(`El equipo "${equipoprimero.nombreEquipo}" obtuvo ${partido1.puntaje} puntos`)})
+celdaEquipo3.addEventListener('click',()=>{alert(`El equipo "${equiposegundo.nombreEquipo}" obtuvo ${partido2.puntaje} puntos`)})
+celdaEquipo4.addEventListener('click',()=>{alert(`El equipo "${equipotercero.nombreEquipo}" obtuvo ${partido3.puntaje} puntos`)})
+
+
+
 
 
 
