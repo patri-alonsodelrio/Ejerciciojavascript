@@ -5,13 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./scripts/Ejercicio3array.js" type="module"></script>
     <title>Document</title>
 </head>
 <body>
     <header>
-        <h1>Tablas de Campeonatos y Copas</h1>
+        <h1>Lista de Equipos a Agregar</h1>
+    <form method="post" id="botonEnviar"action="">
+        <div>
+            <label>Equipo Campeonato Argentino</label>
+            <input id="nombreEquipo1" type="text" placeholder="Equipo Campeonato Argentino">
+        </div>
+        <div>
+            <label>Partido 1 Resultado</label>
+            <div>
+                <label>Ingrese 1 si gano, 2 si empato y 3 si perdio</label>
+                <input id="Res1" type="number" placeholder="Ingrese 1, 2 o 3">
+            </div>
+            <input id="IngGf1" type="number" placeholder="GF">
+            <input id="IngGc1" type="number" placeholder="GC">
+        </div>
+        <div>
+            <label>Partido 2 Resultado</label>
+            <div>
+                <label>Ingrese 1 si gano, 2 si empato y 3 si perdio</label>
+                <input id="Res11" type="number" placeholder="Ingrese 1, 2 o 3">
+            </div>
+            <input id="IngGf11" type="number" placeholder="GF">
+            <input id="IngGc11" type="number" placeholder="GC">
+        </div>
+        <div>
+            <label>Equipo Copa Argentina</label>
+            <input id="nombreEquipo2" type="text" placeholder="Equipo Copa Argentina">
+        </div>
+        <div>
+            <label>Partido 1 Resultado</label>
+            <div>
+                <label>Ingrese 1 si gano, 2 si empato y 3 si perdio</label>
+                <input id="Res2" type="number" placeholder="Ingrese 1, 2 o 3">
+            </div>
+            <input id="IngGf2" type="number" placeholder="GF">
+            <input id="IngGc2" type="number" placeholder="GC">
+        </div>
+        <div>
+            <label>Partido 2 Resultado</label>
+            <div>
+                <label>Ingrese 1 si gano, 2 si empato y 3 si perdio</label>
+                <input id="Res22" type="number" placeholder="Ingrese 1, 2 o 3">
+            </div>
+            <input id="IngGf22" type="number" placeholder="GF">
+            <input id="IngGc22" type="number" placeholder="GC">
+        </div>
+        <div>
+            <label>Equipo Copa Libertadores</label>
+            <input id="nombreEquipo3" type="text" placeholder="Equipo Copa Libertadores">
+        </div>
+          <div>
+            <label>Partido 1 Resultado</label>
+            <div>
+                <label>Ingrese 1 si gano, 2 si empato y 3 si perdio</label>
+                <input id="Res3" type="number" placeholder="Ingrese 1, 2 o 3">
+            </div>
+            <input id="IngGf3" type="number" placeholder="GF">
+            <input id="IngGc3" type="number" placeholder="GC">
+        </div>
+        <div>
+            <label>Partido 2 Resultado</label>
+            <div>
+                <label>Ingrese 1 si gano, 2 si empato y 3 si perdio</label>
+                <input id="Res33" type="number" placeholder="Ingrese 1, 2 o 3">
+            </div>
+            <input id="IngGf33" type="number" placeholder="GF">
+            <input id="IngGc33" type="number" placeholder="GC">
+        </div>
+        <div >
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
     </header>
     <main>
+        <h2>Tablas de Campeonatos y Copas</h2>
         <table border class="tabla">
             <tr>
                 <th colspan="6">Campeonato Argentino</th>
@@ -24,7 +97,7 @@
                 <th>DIF</th>
             </tr>
             <tr>
-                <td class="equipo1" colspan="2"> asdasda </td>
+                <td class="equipo1" colspan="2"></td>
                 <td class="pts1"></td>
                 <td class="gf1"></td>
                 <td class="gc1"></td>
@@ -95,6 +168,5 @@
     </main>
 
 
-    <script src="./js/Ejercicio3array.js"></script>
 </body>
 </html>
