@@ -182,6 +182,7 @@ for (let dif of difEquipo) {
     golesContra1 = gc1 + gc11;
     diferencia1 = golesAFavor1 - golesContra1;
 
+    
 
     // Push de las estadisticas al array correspondiente
 
@@ -383,7 +384,6 @@ for (let dif of difEquipo) {
 
     difEquipo4.innerText = `${partido3.diferencia}`;
 
-    // Eventos
     // JSON STORAGE
 
     //Guardo en el Storage el objeto que es mi primer equipo de la tabla de posiciones
@@ -399,6 +399,29 @@ for (let dif of difEquipo) {
     // luego de parsear el JSON se obtiene por consola el nombre del equipo
 
     console.log(equipoParseado.nombreEquipo)
+
+    // optimizacion proyecto
+    puntaje1 >= 6  && console.log(`El club ${equipoprimero.nombreEquipo} gano los dos partidos`);
+    puntaje1 <= 2  && console.log(`El club ${equipoprimero.nombreEquipo} no gano un partido`);
+
+
+    // DESESTRUCTURACION OBETO EQUIPOPRIMERO
+
+    let { nombreEquipo, estadistica: [puntaje] } = firstequipo
+
+    console.log(nombreEquipo)
+    console.log(puntaje)
+
+    // SPREAD agregando propiedades
+
+    let newTeam =   {
+        ...firstequipo, 
+        nombreEquipo: 'Platense',
+        nacionalidad: 'Argentina',
+        titulos: 19
+    }
+
+    console.log(newTeam)
 
 
     })
