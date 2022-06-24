@@ -77,7 +77,15 @@ console.log(celdaEquipo[0].innerHTML)
 for (let team of celdaEquipo) {
     console.log(team)
     team.innerHTML = `${firstequipo.nombreEquipo}`;
+    team.addEventListener('click', respuestaClick)
+    function respuestaClick() {
+    Swal.fire(`El equipo ${firstequipo.nombreEquipo} sumo 6 puntos`)
+}   
 }
+
+
+
+
 
 // puntaje
 
@@ -423,6 +431,14 @@ for (let dif of difEquipo) {
 
     console.log(newTeam)
 
+    //evento librerias
 
+    celdaEquipo2.addEventListener('click', () => 
+    {Swal.fire(`El equipo ${equipoprimero.nombreEquipo} obtuvo ${partido1.puntaje} puntos` )});
+    celdaEquipo3.addEventListener('click', () => 
+    {Swal.fire(`El equipo ${equiposegundo.nombreEquipo} obtuvo ${partido2.puntaje} puntos` )});
+    celdaEquipo4.addEventListener('click', () => 
+    {Swal.fire(`El equipo ${equipotercero.nombreEquipo} obtuvo ${partido3.puntaje} puntos` )});
+    
     })
 })
