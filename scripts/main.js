@@ -1,8 +1,23 @@
+// FETCH DESAFIO
+
+fetch('../assets/misdatos.json')
+    .then((resp)=>resp.json())
+    .then((data)=>{console.log(data), 
+        console.log(data[0].Equipo)
+        console.log(data[2].Equipo)
+        console.log(data[4].Equipo)
+        console.log(data[5].Equipo)})
+
+
+
 import * as campeonatos from "./ClaseCampeonatos.js";
 import * as equipos from "./ClaseEquipos.js";
 import * as estadisticas from "./ClaseEstadisticas.js"
 
 document.addEventListener("DOMContentLoaded", function () {
+
+
+
 // Constructor de objetos Campeonatos
 
 let campeonato1 = new campeonatos.Campeonatos('CampeonatoArg', 'Nacional');
@@ -125,7 +140,7 @@ for (let dif of difEquipo) {
     let botonEnviar = document.getElementById('botonEnviar')
     botonEnviar.addEventListener('submit', (e)=>{
         e.preventDefault()
-        celdaEquipo2.innerHTML = nombreEquipo1.value
+//        celdaEquipo2.innerHTML = nombreEquipo1.value
         celdaEquipo3.innerHTML = nombreEquipo2.value
         celdaEquipo4.innerHTML = nombreEquipo3.value
 
