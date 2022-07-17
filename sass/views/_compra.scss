@@ -1,0 +1,40 @@
+
+.web{
+    max-height: 100vh;
+    background-image: linear-gradient(to right, #dcff03, #ede700, #f8ce00, #feb500, #ff9d0a);;
+    .title-container {
+        width: 50%;
+        margin: 0 auto;
+    
+        .title {
+            text-shadow: 0 0 1px black;
+            color: rgb(245, 33, 33);
+            text-align: center;
+        }
+    }
+    picture{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+    }
+    .button-register {
+        border: none;
+        outline: none;
+        height: 40px;
+        background: #b80f22;
+
+        font-size: 18px;
+        border-radius: 20px;
+        margin-top: 1rem;
+        position: absolute;
+        bottom:0 ; 
+        left:0 ;
+        margin-bottom: 2rem;
+        margin-left: 2rem;
+        a{
+            color: #fff;
+        }
+    }
+}

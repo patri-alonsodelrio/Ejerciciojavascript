@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+header .logo {
+  position: absolute;
+  left: 5rem;
+  top: 2rem; }
+
+header .navbar {
+  display: flex;
+  justify-content: end;
+  padding-right: 3rem;
+  padding-top: 4rem;
+  gap: 3rem; }
+  header .navbar .login {
+    margin-bottom: 0;
+    font-size: 1.5em; }
+
+.register-box {
+  display: flex;
+  flex-direction: column;
+  background-color: #0a0b0c;
+  color: white;
+  max-width: 35rem;
+  max-height: 100rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3rem;
+  border-radius: 40px; }
+  .register-box h1 {
+    margin-block-start: 0;
+    margin-block-end: 0; }
+  .register-box .register-form {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem; }
+    .register-box .register-form a {
+      color: white; }
+    .register-box .register-form .button-register {
+      border: none;
+      outline: none;
+      height: 40px;
+      background: #b80f22;
+      color: #fff;
+      font-size: 18px;
+      border-radius: 20px; }
+      .register-box .register-form .button-register:hover {
+        cursor: pointer;
+        background: #DCFF03;
+        color: #000; }
+    .register-box .register-form input {
+      border-radius: 10px;
+      padding: .4rem; }
+
+.row {
+  justify-content: space-around; }
+
+.card-body {
+  display: flex;
+  flex: initial;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem; }
+  .card-body img {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover; }
+
+.navbar .buscador .input-buscador {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-left: .4em;
+  padding: .5em; }
+
+.navbar .button-index {
+  align-items: center;
+  font-weight: 500;
+  font-size: 1em;
+  padding: .5em;
+  color: white;
+  background: #ad5389;
+  background-image: linear-gradient(to right, #dcff03, #ede700, #f8ce00, #feb500, #ff9d0a);
+  border: none;
+  letter-spacing: 0.05em;
+  border-radius: 16px; }
+  .navbar .button-index svg {
+    margin-right: 3px;
+    transform: rotate(30deg);
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1); }
+  .navbar .button-index a span {
+    color: white;
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1); }
+  .navbar .button-index:hover svg {
+    transform: translateX(5px) rotate(90deg); }
+  .navbar .button-index:hover span {
+    transform: translateX(7px); }
+
+.carousel {
+  margin-bottom: 5rem; }
+  .carousel .img-apes {
+    width: 100%;
+    height: 600px; }
+  .carousel .img-allien {
+    width: 100%;
+    height: 600px; }
+  .carousel .img-punk {
+    width: 100%;
+    height: 600px; }
+  .carousel-control-next-icon {
+    background-color: blue;
+    border-radius: 50%;
+    padding: 2rem; }
+  .carousel-control-prev-icon {
+    background-color: blue;
+    border-radius: 50%;
+    padding: 2rem; }
+  .carousel .carousel-caption h5 {
+    background-color: #afa9a9;
+    border-radius: 20px;
+    font-size: 3em;
+    color: white; }
+  .carousel .carousel-caption p {
+    color: white;
+    font-size: 1.5em; }
+
+.added {
+  border-radius: 15px; }
+
+.fa-cart-shopping {
+  color: #ff9d0a; }
+
+.modal-container {
+  display: flex;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.3);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  transition: opacity 0.3s ease; }
+  .modal-container .button-register {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #b80f22;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    margin-top: 1rem; }
+    .modal-container .button-register:hover {
+      cursor: pointer;
+      background: #DCFF03;
+      color: #000; }
+  .modal-container .formulario {
+    background-color: #DCFF03;
+    display: block;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center; }
+    .modal-container .formulario h1 {
+      margin: 0; }
+    .modal-container .formulario p {
+      opacity: 0.7;
+      font-size: 14px; }
+
+.show {
+  pointer-events: auto;
+  opacity: 1; }
+
+.offcanvas .offcanvas-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; }
+  .offcanvas .offcanvas-body .card {
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+    transition: 0.5s ease; }
+  .offcanvas .offcanvas-body .card-body .btn-eliminar .fa-trash-can {
+    color: #f52121;
+    cursor: pointer; }
+
+.offcanvas .total-carrito {
+  height: 80px;
+  text-align: center;
+  padding-top: 2rem; }
+
+.offcanvas .botones {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; }
+  .offcanvas .botones .vaciar-carrito {
+    background-color: #f52121;
+    color: #fff;
+    margin-bottom: 1rem;
+    border: transparent;
+    border-radius: 10px;
+    width: 40%;
+    align-self: center; }
+    .offcanvas .botones .vaciar-carrito:hover {
+      color: #000;
+      background-color: #DCFF03; }
+  .offcanvas .botones .confirmar-compra {
+    background-color: #34daf0;
+    color: #000;
+    margin-bottom: 1rem;
+    border: transparent;
+    border-radius: 10px;
+    width: 40%;
+    align-self: center; }
+    .offcanvas .botones .confirmar-compra:hover {
+      color: #000;
+      background-color: #DCFF03; }
+
+.collection-title {
+  text-align: center;
+  margin-bottom: 2rem; }
+
+.buttons-select {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem; }
+  .buttons-select .button-select {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0.8em 1.3em 0.8em 0.9em;
+    color: white;
+    background: #ad5389;
+    background-image: linear-gradient(to right, #dcff03, #ede700, #f8ce00, #feb500, #ff9d0a);
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 16px; }
+
+.web {
+  max-height: 100vh;
+  background-image: linear-gradient(to right, #dcff03, #ede700, #f8ce00, #feb500, #ff9d0a); }
+  .web .title-container {
+    width: 50%;
+    margin: 0 auto; }
+    .web .title-container .title {
+      text-shadow: 0 0 1px black;
+      color: #f52121;
+      text-align: center; }
+  .web picture {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 2rem;
+    margin-bottom: 2rem; }
+  .web .button-register {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #b80f22;
+    font-size: 18px;
+    border-radius: 20px;
+    margin-top: 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 2rem;
+    margin-left: 2rem; }
+    .web .button-register a {
+      color: #fff; }
+
+* {
+  font-family: 'Outfit', sans-serif; }
+
+a {
+  text-decoration: none;
+  color: black; }

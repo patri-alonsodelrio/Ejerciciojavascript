@@ -1,0 +1,82 @@
+[{
+        "id": 1,
+        "coleccion": "BORED APE",
+        "nombre": "Undead Ape",
+        "descripcion": "The Earth in 2136 is a very different place. The greed of humanity has plagued the world for decades. Environmental neglect has resulted in the mass destruction of habitats and diseases thrive in every major city. But the digital world isn’t immune, either. With wars raging in the real world, the digital world is abandoned.",
+        "precio": 99.0,
+        "divisa": "ETH",
+        "img": "./assets/images/undead-ape.jpg"
+    },
+    {
+        "id": 2,
+        "coleccion": "BORED APE",
+        "nombre": "Mutant Ape",
+        "descripcion": "The MUTANT APE  is a Mutant Ape that can only be created by exposing an existing Bored Ape to a vial of MUTANT SERUM or by minting a Mutant Ape in the public sale.",
+        "precio": 169,
+        "divisa": "ETH",
+        "img": "./assets/images/mutant-ape.png"
+    },
+    {
+        "id": 3,
+        "coleccion": "BORED APE",
+        "nombre": "King Ape",
+        "descripcion": "The KING APE  is an Ape that can only be created by exposing an existing Bored Ape to a vial of MUTANT SERUM or by minting a Mutant Ape in the public sale.",
+        "precio": 240,
+        "divisa": "ETH",
+        "img": "./assets/images/king-ape.webp"
+    },
+    {
+        "id": 4,
+        "coleccion": "CRYPTOPUNKS",
+        "nombre": "Cryptopunk #66",
+        "descripcion": "This NFTs series is dedicated to the characters of the famous Cryptopunk series. Take one of the characters to your collection.",
+        "precio": 6,
+        "divisa": "ETH",
+        "img": "./assets/images/cryptopunk66.png"
+    },
+    {
+        "id": 5,
+        "coleccion": "CRYPTOPUNKS",
+        "nombre": "Cryptopunk #33",
+        "descripcion": "This NFTs series is dedicated to the characters of the famous Cryptopunk series. Take one of the characters to your collection.",
+        "precio": 0.025,
+        "divisa": "ETH",
+        "img": "./assets/images/cryptopunk33.png"
+    },
+    {
+        "id": 6,
+        "coleccion": "CRYPTOPUNKS",
+        "nombre": "Cryptopunk #70",
+        "descripcion": "This NFTs series is dedicated to the characters of the famous Cryptopunk series. Take one of the characters to your collection.",
+        "precio": 3.75,
+        "divisa": "ETH",
+        "img": "./assets/images/cryptopunk70.png"
+    },
+    {
+        "id": 7,
+        "coleccion": "CRYPTOALLIENS",
+        "nombre": "Alliepunk #60",
+        "descripcion": "This NFTs series is dedicated to the characters of the famous Cryptopunk series. Take one of the characters to your collection.",
+        "precio": 7,
+        "divisa": "ETH",
+        "img": "./assets/images/allienpunk1.jpg"
+    },
+    {
+        "id": 8,
+        "coleccion": "CRYPTOALLIENS",
+        "nombre": "Alliepunk #48",
+        "descripcion": "This NFTs series is dedicated to the characters of the famous Cryptopunk series. Take one of the characters to your collection.",
+        "precio": 2.34,
+        "divisa": "ETH",
+        "img": "./assets/images/allienpunk2.jpg"
+    },
+    {
+        "id": 9,
+        "coleccion": "CRYPTOALLIENS",
+        "nombre": "Alliepunk #103",
+        "descripcion": "This NFTs series is dedicated to the characters of the famous Cryptopunk series. Take one of the characters to your collection.",
+        "precio": 120,
+        "divisa": "ETH",
+        "img": "./assets/images/allienpunk3.jpg"
+    }
+]
